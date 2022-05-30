@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.nav-menu {
+    color: #3e3e3e !important;
+}
+.navbar-light .navbar-brand:hover, .nav-menu:focus, .nav-menu:hover {
+    color: #3e3e3e !important;
+}
+.carousel-caption {
+    top: 40%;
+    transform: translate(0, -25%);
+}
+.slider-heading{
+    font-size: 48px;
+    line-height: 65px;
+}
+.section-title h2{
+    font-size: 38px;
+    color: #0A0826;
+    font-weight: 600;
+}
+.card{
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.card-title{
+    font-size: 36px;
+    color: #231D4F;
+    font-weight: 600;
+}
+.card-subtitle{
+    font-size: 24px;
+    color: #231D4F;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 16px;
+    color: #848199;
+}
+.pricing-details li i {
+    background-color: #5243c21a;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #5243C2;
+    font-size: 14px;
+}
+.pricing-details li span {
+    color: #848199;
+}
+.plan-btn {
+    background-color: #f496d11a;
+    color: #3F87F5;
+    display: block;
+    border-radius: 25px;
+    padding: 12px 0;
+    font-weight: 500;
+}
+.card-active{
+    background-color: #3F87F5;
+    transition: all 0.5s ease-in-out;
+    margin-top: -30px;
+    box-shadow: 0px 42px 34px #3f87f540;
+    background-image: url("../images/pricing-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.card-active .card-title, .card-active .card-subtitle, .card-active .card-text, .card-active .pricing-details li i, .card-active .pricing-details li span {
+    color: #fff;
+}
+.card-active .plan-btn{
+    background-color: #fff;
+}
+.hot-badge{
+    top: -15px;
+    right: 20px;
+}
+.hot-badge span{
+    background-color: #FF4E4E;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.popup-toast{
+    width: 300px;
+    max-width: 100%;
+    font-size: .875rem;
+    pointer-events: auto;
+    background-color: rgba(255,255,255,.85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    border-radius: 0.25rem;
+    border-left: 6px solid #3F87F5;
+}
+.popup-toast p{
+    font-size: 14px;
+    color: #505050;
+    font-weight: 600;
+}
+.popup-toast span{
+    font-size: 20px;
+    display: inline-block;
+    color: #007bff99;
+    font-weight: 600;
+}
+.accordion-button{
+    font-weight: 600;
+    font-size: 20px;
+    color: #383838;
+}
+.accordion-button:not(.collapsed) {
+    color: #383838;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-item {
+    margin: 20px 0;
+    box-shadow: 0 0 3px 0px #00000033;
+    border: none;
+    border-radius: 10px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-body{
+    color: #7E848C;
+    line-height: 26px;
+}
+footer{
+    background-color: #0B0D17;
+}
+.footer-credit{
+    font-size: 14px;
+    color: #D9DBE1;
+}
+.download-app{
+    font-size: 18px;
+    color: #D9DBE1;
+}
+@media only screen and (max-width: 768px){
+    .carousel-caption {
+        top: 40%;
+        transform: translate(0, -25%);
+    }
+    .carousel-item img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .slider-heading {
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .carousel-caption {
+        top: 25%;
+        transform: translate(0, -25%);
+    }
+    footer .row, .faq .row{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer-credit{
+        margin-top: 25px;
+    }
+}
